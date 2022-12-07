@@ -1,10 +1,10 @@
 <?php
 
-require __DIR__ . '/movie.php';
+require __DIR__ . '/Movie.php';
 
 $listOfFilms = [
-    $matrix = new Movie('Matrix',  [new Genres('Fantasy'), new Genres('Action')], 'Lorem ipsum dolor', 'https://picsum.photos/200/300'),
-    $matrixTwo = new Movie('Matrix II', [new Genres('Fantasy'), new Genres('Action')], 'Lorem ipsum dolor', 'https://picsum.photos/200/300')
+    new Movie('Matrix',  [new Genre('Fantasy'), new Genre('Action')], 'Lorem ipsum dolor', 'https://picsum.photos/200/300'),
+    new Movie('Matrix II', [new Genre('Fantasy'), new Genre('Action')], 'Lorem ipsum dolor', 'https://picsum.photos/200/300')
 ];
 
 

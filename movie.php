@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__ . '/genres.php';
+require __DIR__ . '/Genre.php';
 
-class Movie{
+class Movie {
     public $name;
     public $genres;
     public $description;
@@ -14,11 +14,6 @@ class Movie{
         $this->description = $description;
         $this->coverImage = $coverImage;
 
-        // foreach ($genres as $genre) {
-        //     if (!$genre ){
-        //         die('error');
-        //     }
-        // }
     }
     
     public function getName()
