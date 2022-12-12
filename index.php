@@ -3,8 +3,8 @@
 require __DIR__ . '/Movie.php';
 
 $listOfFilms = [
-    new Movie('Matrix',  [new Genre('Fantasy'), new Genre('Action')], 'Lorem ipsum dolor', 'https://picsum.photos/200/300'),
-    new Movie('Matrix II', [new Genre('Fantasy'), new Genre('Action')], 'Lorem ipsum dolor', 'https://picsum.photos/200/300')
+    new Movie('Matrix',  [new Genre('Fantasy'), new Genre('Action')], 'Lorem ipsum dolor', 'https://www.themoviedb.org/t/p/w220_and_h330_face/5uCQOswAMkOqUZiNzOxvckw59e3.jpg'),
+    new Movie('Matrix II', [new Genre('Fantasy'), new Genre('Action')], 'Lorem ipsum dolor', 'https://www.themoviedb.org/t/p/w220_and_h330_face/bgx0hblyE1XYWHFFewrYjXE6DeQ.jpg')
 ];
 
 
@@ -27,7 +27,7 @@ $listOfFilms = [
         <div class="row">
             <?php foreach ($listOfFilms as $singleFilm) : ?>
                 <div class="col p-3">
-                    <div class="card h-100 p-5">
+                    <div class="card h-100 p-4">
                         <h3><?= $singleFilm->name ?></h3>
                         <h5>Generi:</h5>
                         <?php foreach ($singleFilm->genres as $singleGenre) : ?>
