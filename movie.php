@@ -14,6 +14,14 @@ class Movie {
         $this->description = $description;
         $this->coverImage = $coverImage;
 
+
+        foreach ($genres as $genre) {
+            if (!$genre instanceof Genre) {
+              echo 'Genres data type incorrect! every genre must be an instance of the Genre class';
+              die;
+            }
+          }
+
     }
     
     public function getName()
